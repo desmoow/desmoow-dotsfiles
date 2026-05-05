@@ -1,6 +1,8 @@
+@import ".cache/wal/colors-rofi-dark.rasi"
+
 configuration {
 	modi: "drun";
-	font: "Iosevka Nerd Font 16";
+	font: "Kosugi 18";
 /*	location: 0;*/
 /*	yoffset: 0;*/
 /*	xoffset: 0;*/
@@ -149,7 +151,7 @@ configuration {
 @theme "/dev/null"
 
 * {
-    bg: #000000;
+    bg: #1d1f21;
     bg-alt: #252525;
     fg: #a89984;
     accent: #ebdbb2;
@@ -158,6 +160,7 @@ configuration {
     color: @fg;
     border: 0;
     border-color: @bg;
+    border-radius: 16;
     margin: 0;
     padding: 0;
     spacing: 0;    
@@ -200,7 +203,7 @@ inputbar {
 
 prompt {
     text-color: @accent;
-    font: "Iosevka Nerd Font Bold 16";
+    font: "Kosugi Bold 18";
 }
 
 entry {

@@ -1,0 +1,25 @@
+[font]
+#normal = { family = "MartianMono Nerd Font", style = "Regular" }
+#bold = { family = "MartianMono Nerd Font", style = "Bold" }
+#italic = { family = "MartianMono Nerd Font", style = "Italic" }
+#bold_italic = { family = "MartianMono Nerd Font", style = "Bold Italic" }
+
+#normal = { family = "IosevkaNerdFont", style = "Regular" }
+#bold = { family = "IosevkaNerdFont", style = "Bold" }
+#italic = { family = "IosevkaNerdFont", style = "Italic" }
+#bold_italic = { family = "IosevkaNerdFont", style = "Bold Italic" }
+
+normal = { family = "Kosugi", style = "Regular" }
+bold = { family = "Kosugi", style = "Bold" }
+italic = { family = "Kosugi", style = "Italic" }
+bold_italic = { family = "Kosugi", style = "Bold Italic" }
+
+size = 18.0
+
+[general]
+import = [
+    "/home/desmoow/.config/alacritty/themes/tomorrow_night.toml"
+]
+
+[window]
+opacity = 1
