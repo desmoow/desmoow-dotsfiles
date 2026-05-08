@@ -2,14 +2,15 @@
 {
     "layer": "true", // Waybar at top layer
     "position": "top", // Waybar position (top|bottom|left|right)
-    "height": 42, // Waybar height (to be removed for auto height)
+    "height": 38, // Waybar height (to be removed for auto height)
     "margin": "0 0 0 0", // Waybar Margin
     "width": 1920, // Waybar width
     "spacing": 2, // Gaps between modules (4px)
     // Choose the order of the modules
     "modules-left": [
         "hyprland/workspaces",
-	"ext/workspaces"
+	"ext/workspaces",
+    "dwl/window"
     ],
     "modules-center": [
     ],
