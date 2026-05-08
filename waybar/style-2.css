@@ -106,7 +106,10 @@ button:hover {
     margin-right: 2;
 }
 
-#window,
+#window {
+    color: ffffff;
+}
+
 #workspaces {
     margin: 0 4px;
 }
