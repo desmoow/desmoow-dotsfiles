@@ -2,11 +2,11 @@
 * {
     /* `otf-font-awesome` is required to be installed for icons */
     font-family: Iosevka Nerd Font;
-    font-size: 35px;
+    font-size: 28px;
     opacity: 1;
 }
 window#waybar {
-    background-color: rgba(0, 0, 0, 1);
+    background-color: rgba(29, 31, 33, 1);
     color: rgba(235, 219, 178, 1);
     transition-property: background-color;
     transition-duration: .5s; 
@@ -62,7 +62,8 @@ button:hover {
     color: #0d4b57;
 }
 #workspaces button.active{
-    color: #30e7ff;
+    color: #000000;
+    background-color: #30e7ff;
 }
 
 #workspaces button.focused {
@@ -102,7 +103,7 @@ button:hover {
 }
 
 #clock {
-    margin-right: 10;
+    margin-right: 2;
 }
 
 #window,
@@ -112,7 +113,7 @@ button:hover {
 
 /* If workspaces is the leftmost module, omit left margin */
 .modules-left > widget:first-child > #workspaces {
-    margin-left: 10;
+    margin-left: 2;
 }
 
 /* If workspaces is the rightmost module, omit right margin */

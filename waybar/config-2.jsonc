@@ -1,8 +1,8 @@
 // -*- mode: jsonc -*-
 {
-    "layer": "false", // Waybar at top layer
-    "position": "bottom", // Waybar position (top|bottom|left|right)
-    "height": 48, // Waybar height (to be removed for auto height)
+    "layer": "true", // Waybar at top layer
+    "position": "top", // Waybar position (top|bottom|left|right)
+    "height": 42, // Waybar height (to be removed for auto height)
     "margin": "0 0 0 0", // Waybar Margin
     "width": 1920, // Waybar width
     "spacing": 2, // Gaps between modules (4px)
@@ -14,7 +14,7 @@
     "modules-center": [
     ],
     "modules-right": [
-	"group/tray-expander",
+	"tray",
 	"privacy",
 	"custom/separator",
 	"memory",
@@ -29,7 +29,9 @@
     ],
     // Modules configuration 
 "custom/separator": {
-  "format": "⌘",
+  //"format": "⌘",
+  "format": "|",
+  //"format": ",",
   "interval": "0",
   },
     "hyprland/workspaces": {
@@ -84,7 +86,7 @@
     },	
     "clock": {
         // "timezone": "America/New_York",
-        "format": "{:%H:%M}",
+        "format": "{:%d/%m/%Y %H:%M}",
         "tooltip-format": "<small><tt>{calendar}</tt></small>",
         "interval": 1, 
 	"calendar": {
@@ -152,13 +154,13 @@
 	"tooltip": false
     },
     "cpu": {
-	"format": "CPU {usage}%"
+	"format": "cpu {usage}%"
     },
     "disk": {
-	"format": "DISK {percentage_used}%"
+	"format": "disk {percentage_used}%"
     },
     "memory": {
-	"format": "RAM {percentage}%"
+	"format": "memory {percentage}%"
     },
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
