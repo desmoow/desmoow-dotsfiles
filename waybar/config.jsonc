@@ -2,28 +2,38 @@
 {
     "layer": "true", // Waybar at top layer
     "position": "top", // Waybar position (top|bottom|left|right)
-    "height": 42, // Waybar height (to be removed for auto height)
+    "height": 36, // Waybar height (to be removed for auto height)
     "margin": "0 0 0 0", // Waybar Margin
-    "width": 920, // Waybar width
+    "width": 1920, // Waybar width
     "spacing": 2, // Gaps between modules (4px)
     // Choose the order of the modules
     "modules-left": [
         "hyprland/workspaces",
-	"ext/workspaces"
+	"ext/workspaces",
+	"custom/separator",
+	"dwl/window"
     ],
     "modules-center": [
-        "clock",
-    "calendar"
     ],
     "modules-right": [
-	"group/tray-expander",
+	"tray",
 	"privacy",
+	"custom/separator",
+	"memory",
+	"custom/separator",
+	"disk",
+	"custom/separator",
         "pulseaudio",
-        "battery"
+        "battery",
+	"custom/separator",
+	"clock",
+    "calendar"
     ],
     // Modules configuration 
 "custom/separator": {
-  "format": "⌘",
+  //"format": "⌘",
+  "format": "|",
+  //"format": ",",
   "interval": "0",
   },
     "hyprland/workspaces": {
@@ -75,10 +85,10 @@
         //   "blueman": "bluetooth",
         //   "TelegramDesktop": "$HOME/.local/share/icons/hicolor/16x16/apps/telegram.png"
         // }
-    },
+    },	
     "clock": {
         // "timezone": "America/New_York",
-        "format": "{:%H:%M}",
+        "format": "{:%d/%m/%Y %H:%M}",
         "tooltip-format": "<small><tt>{calendar}</tt></small>",
         "interval": 1, 
 	"calendar": {
@@ -145,9 +155,18 @@
 	"format": "> ",
 	"tooltip": false
     },
+    "cpu": {
+	"format": "cpu {usage}%"
+    },
+    "disk": {
+	"format": "disk {percentage_used}%"
+    },
+    "memory": {
+	"format": "memory {percentage}%"
+    },
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
-        "format": "volume= {volume}%",
+        "format": "volume {volume}%",
         "format-bluetooth": "{volume}% {icon}",
         "format-bluetooth-muted": "󰟎",
         "format-muted": "󰝟 ",

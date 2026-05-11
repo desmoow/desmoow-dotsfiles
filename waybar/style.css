@@ -1,20 +1,15 @@
 /* @import "mocha.css"; */
 * {
     /* `otf-font-awesome` is required to be installed for icons */
-    font-family: Kosugi;
+    font-family: Iosevka Nerd Font;
     font-size: 28px;
     opacity: 1;
 }
 window#waybar {
-    background-color: transparent;
-    color: rgba(235, 219, 178, 1);
-    border-radius: 0px 0px 16px 16px;
-    transition-property: background-color;
-    transition-duration: .5s; 
-}
-#waybar > box {
     background-color: rgba(29, 31, 33, 1);
-    border-radius: 0px 0px 16px 16px;
+    color: rgba(235, 219, 178, 1);
+    transition-property: background-color;
+    transition-duration: 0.5s;
 }
 
 window#waybar.hidden {
@@ -46,42 +41,48 @@ button:hover {
 
 /* you can set a style on hover for any module like this */
 #pulseaudio:hover {
-    background-color: rgba(0,0,0,0);
+    background-color: rgba(0, 0, 0, 0);
+}
+#custom-separator {
+    color: #30e7ff;
 }
 
 #custom-expand-icon {
-    color: #ebdbb2;
+    color: #ffffff;
 }
 
 #workspaces button {
     padding: 0 5px;
     background-color: transparent;
-    color: #a89984;
+    color: #ffffff;
 }
 
 #workspaces button:hover {
-    background: rgba(0, 0, 0, 0.2);
-    color: #ebdbb2;
+    background: rgba(0, 0, 0, 0);
+    color: #ffffff;
 }
-#workspaces button.active{
-    color: #ebdbb2;
+
+#workspaces button.active {
+    color: #000000;
+    background-color: #30e7ff;
 }
 
 #workspaces button.focused {
-    background-color: #64727D;
-    box-shadow: inset 0 -3px #a89984;
+    background-color: #ffffff;
+    box-shadow: inset 0 -3px #ffffff;
 }
 
 #workspaces button.urgent {
-    background-color: #cc241d;
+    background-color: #cc24ff;
 }
 
 #mode {
-    background-color: #64727D;
+    background-color: #ffffff;
     box-shadow: inset 0 -3px #ffffff;
 }
 
 #bluetooth,
+#window,
 #clock,
 #battery,
 #cpu,
@@ -100,21 +101,24 @@ button:hover {
 #power-profiles-daemon,
 #mpd {
     padding: 0 10px;
-    color: #ebdbb2;
+    color: #ffffff;
 }
 
 #clock {
-    margin-right: 10;
+    margin-right: 0;
 }
 
-#window,
+#window {
+    color: #ffffff;
+}
+
 #workspaces {
-    margin: 0 4px;
+    margin: 0 0px;
 }
 
 /* If workspaces is the leftmost module, omit left margin */
 .modules-left > widget:first-child > #workspaces {
-    margin-left: 10;
+    margin-left: 0;
 }
 
 /* If workspaces is the rightmost module, omit right margin */
@@ -123,34 +127,35 @@ button:hover {
 }
 
 #clock {
-    background-color: rgba(0,0,0,0);
-    color: #ebdbb2;
+    background-color: rgba(0, 0, 0, 0);
+    color: #ffffff;
 }
 
 #battery {
-    background-color: rgba(0,0,0,0);
-    color: #ebdbb2;
+    background-color: rgba(0, 0, 0, 0);
+    color: #ffffff;
 }
 
 #bluetooth {
-    color: #ebdbb2;
+    color: #ffffff;
 }
 
-#battery.charging, #battery.plugged {
-    background-color: rgba(0,0,0,0);
-    color: #98971a;
+#battery.charging,
+#battery.plugged {
+    background-color: rgba(0, 0, 0, 0);
+    color: #ffffff;
 }
 
 @keyframes blink {
     to {
-        background-color: rgba(0,0,0,0);
+        background-color: rgba(0, 0, 0, 0);
         color: #000000;
     }
 }
 
 /* Using steps() instead of linear as a timing function to limit cpu usage */
 #battery.critical:not(.charging) {
-    background-color: rgba(0,0,0,0);
+    background-color: rgba(0, 0, 0, 0);
     color: #cc241d;
     animation-name: none;
     animation-duration: 0.5s;
@@ -159,34 +164,32 @@ button:hover {
     animation-direction: alternate;
 }
 
-
 label:focus {
     background-color: #000000;
 }
 
-
 #network {
-    background-color: rgba(0,0,0,0);
-    color: #ebdbb2;
+    background-color: rgba(0, 0, 0, 0);
+    color: #ffffff;
 }
 
 #network.disconnected {
-    background-color: rgba(0,0,0,0);
-    color : #cc241d;
+    background-color: rgba(0, 0, 0, 0);
+    color: #cc241d;
 }
 
 #pulseaudio {
-    background-color: rgba(0,0,0,0);
-    color: #ebdbb2;
+    background-color: rgba(0, 0, 0, 0);
+    color: #ffffff;
 }
 
 #pulseaudio.muted {
-    background-color: rgba(0,0,0,0);
-    color: #cc241d
+    background-color: rgba(0, 0, 0, 0);
+    color: #cc241d;
 }
 
 #tray {
-    background-color: rgba(0,0,0,0);
+    background-color: rgba(0, 0, 0, 0);
 }
 
 #tray > .passive {
@@ -204,13 +207,13 @@ label:focus {
 
 #privacy-item {
     padding: 0 5px;
-    color: #ebdbb2;
+    color: #ffffff;
 }
 
 #privacy-item.screenshare {
-    background-color: rgba(0,0,0,0);
+    background-color: rgba(0, 0, 0, 0);
 }
 
 #privacy-item.audio-out {
-    background-color: rgba(0,0,0,0);
+    background-color: rgba(0, 0, 0, 0);
 }
