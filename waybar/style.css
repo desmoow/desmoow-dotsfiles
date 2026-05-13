@@ -1,8 +1,8 @@
 /* @import "mocha.css"; */
 * {
     /* `otf-font-awesome` is required to be installed for icons */
-    font-family: Iosevka Nerd Font;
-    font-size: 28px;
+    font-family: Mono;
+    font-size: 25px;
     opacity: 1;
 }
 window#waybar {
