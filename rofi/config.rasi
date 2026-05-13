@@ -1,12 +1,12 @@
 configuration {
 	modi: "drun";
-	font: "Kosugi 18";
+	font: "Mono 17";
 /*	location: 0;*/
 /*	yoffset: 0;*/
 /*	xoffset: 0;*/
 /*	fixed-num-lines: true;*/
 	show-icons: false;
-	terminal: "alacritty";
+	terminal: "foot";
 /*	ssh-client: "ssh";*/
 /*	ssh-command: "{terminal} -e {ssh-client} {host} [-p {port}]";*/
 /*	run-command: "{cmd}";*/
@@ -58,7 +58,7 @@ configuration {
 /*	display-windowcd: ;*/
 /*	display-run: ;*/
 /*	display-ssh: ;*/
-	display-drun: "search: ";
+	display-drun: "search ❯ ";
 /*	display-combi: ;*/
 /*	display-keys: ;*/
 /*	display-filebrowser: ;*/
@@ -149,40 +149,45 @@ configuration {
 @theme "/dev/null"
 
 * {
+    black: #000000;
     bg: #1d1f21;
-    bg-alt: #252525;
-    fg: #a89984;
-    accent: #ebdbb2;
+    bg-alt: #30e7ff;
+    fg: #ffffff;
+    accent: #30e7ff;
     background-color: @bg;
 
     color: @fg;
     border: 0;
     border-color: @bg;
-    border-radius: 12;
+    border-radius: 0;
     margin: 0;
     padding: 0;
-    spacing: 0;    
-    highlight: none;
+    spacing: 0;
+    highlight: true;
+    height: 34px;
 }
 
 window {
-    width: 385px;
+    width: 1920px;
     border: 1px solid;
-    border-color: @bg-alt;
+    location: south;
+    anchor: south;
+    height: 40px;
 }
 
 element {
-    padding: 2px 4px 2px 4px;
+    padding: 2px 2px 2px 5px;
     text-color: @fg;
 }
 
 element-text {
     vertical-align: 0.5;
-    padding: 5px;
+    padding: 1px;
 }
 
 element-text selected {
-    color: @accent;
+    color: @black;
+    background-color: @accent;
 }
 
 entry {
@@ -193,23 +198,31 @@ entry {
 
 inputbar {
     children: [prompt, entry];
-    border: 0 0 1px 0;
+    border: 0 0 0 0;
     border-color: @bg-alt;
-    margin: 10px 10px 0 10px;
-    padding: 0 0 5px 0;
+    margin: 4px 2px 4px 10px;
+    padding: 0px 0px 0px 0px;
+    width: 25%;
 }
 
 prompt {
-    text-color: @accent;
-    font: "Kosugi Bold 18";
+    text-color: @fg;
+    font: "Mono 17";
 }
 
 entry {
     border-color: @accent;
 }
 
+mainbox {
+    orientation: horizontal;
+    children: [inputbar, listview];
+  }
+
 listview {
+    orientation: horizontal;
+    layout: horizontal;
     background-color: @bg;
     columns: 1;
-    lines: 7;
+    lines: 12;
 }
