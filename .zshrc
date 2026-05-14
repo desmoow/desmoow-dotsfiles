@@ -33,10 +33,10 @@ unsetopt prompt_sp # don't autoclean blanklines
 stty stop undef # disable accidental ctrl s
 
 # history opts
+HISTFILE=~/.zsh-history
 HISTSIZE=1000000
 SAVEHIST=1000000
-HISTFILE="$XDG_CACHE_HOME/zsh_history" # move histfile to cache
-HISTCONTROL=ignoreboth # consecutive duplicates & commands starting with space are not saved
+setopt inc_append_history
 
 # binds
 bindkey "^a" beginning-of-line
@@ -52,9 +52,11 @@ bindkey '^R' fzf-history-widget
 
 # set up prompt
 NEWLINE=$'\n'
-PROMPT="${NEWLINE}%K{#006875}%F{#ffffff}$(date +%_I:%M%P) %K{#00B9D1}%F{#000000} %n %K{#30e7ff} %~ %f%k ❯ " # nord theme
+# PROMPT="${NEWLINE}%K{#006875}%F{#ffffff}$(date +%_I:%M%P) %K{#00B9D1}%F{#000000} %n %K{#30e7ff} %~ %f%k ❯ " # blue edition
+PROMPT="${NEWLINE}%K{#868686}%F{#000000}$(date +%_I:%M%P) %K{#9E9E9E}%F{#000000} %n %K{#e7e7e7} %~ %f%k ❯ " # white edition
 
-echo -e "${NEWLINE}\033[48;2;0;185;209;38;2;0;0;0m $0 \033[0m\033[48;2;48;231;255;38;2;0;0;0m $(uptime -p | cut -c 4-) \033[0m"
+# echo -e "${NEWLINE}\033[48;2;0;185;209;38;2;0;0;0m $0 \033[0m\033[48;2;48;231;255;38;2;0;0;0m $(uptime -p | cut -c 4-) \033[0m" # blue edition
+echo -e "${NEWLINE}\033[48;2;158;158;158;38;2;0;0;0m $0 \033[0m\033[48;2;231;231;231;38;2;0;0;0m $(uptime -p | cut -c 4-) \033[0m" # white edition
 
 # autosuggestions
 # requires zsh-autosuggestions
