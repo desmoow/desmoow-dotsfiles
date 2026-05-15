@@ -46,17 +46,21 @@ bindkey "^j" backward-word
 bindkey "^k" forward-word
 bindkey "^H" backward-kill-word
 # ctrl J & K for going up and down in prev commands
-bindkey "^[[A" up-line-or-history
-bindkey "^[[B" down-line-or-history
+bindkey "^K" up-line-or-history
+bindkey "^J" down-line-or-history
 bindkey '^R' fzf-history-widget
 
 # set up prompt
 NEWLINE=$'\n'
 # PROMPT="${NEWLINE}%K{#006875}%F{#ffffff}$(date +%_I:%M%P) %K{#00B9D1}%F{#000000} %n %K{#30e7ff} %~ %f%k ❯ " # blue edition
-PROMPT="${NEWLINE}%K{#868686}%F{#000000}$(date +%_I:%M%P) %K{#9E9E9E}%F{#000000} %n %K{#e7e7e7} %~ %f%k ❯ " # white edition
+# PROMPT="${NEWLINE}%K{#868686}%F{#000000}$(date +%_I:%M%P) %K{#9E9E9E}%F{#000000} %n %K{#e7e7e7} %~ %f%k ❯ " # white edition
+# PROMPT="${NEWLINE}%K{#513C68}%F{#FFFFFF}$(date +%_I:%M%P) %K{#684C85}%F{#FFFFFF} %n %K{#7D5CA1} %~ %f%k ❯ " # purple edition
+PROMPT="${NEWLINE}%K{#3C6847}%F{#FFFFFF}$(date +%_I:%M%P) %K{#4C855B}%F{#FFFFFF} %n %K{#5CA16E} %~ %f%k ❯ " # green edition
 
 # echo -e "${NEWLINE}\033[48;2;0;185;209;38;2;0;0;0m $0 \033[0m\033[48;2;48;231;255;38;2;0;0;0m $(uptime -p | cut -c 4-) \033[0m" # blue edition
-echo -e "${NEWLINE}\033[48;2;158;158;158;38;2;0;0;0m $0 \033[0m\033[48;2;231;231;231;38;2;0;0;0m $(uptime -p | cut -c 4-) \033[0m" # white edition
+# echo -e "${NEWLINE}\033[48;2;158;158;158;38;2;0;0;0m $0 \033[0m\033[48;2;231;231;231;38;2;0;0;0m $(uptime -p | cut -c 4-) \033[0m" # white editon
+# echo -e "${NEWLINE}\033[48;2;104;76;133;38;2;255;255;255m $0 \033[0m\033[48;2;125;92;161;38;2;255;255;255m $(uptime -p | cut -c 4-) \033[0m" # purple edition
+echo -e "${NEWLINE}\033[48;2;76;133;91;38;2;255;255;255m $0 \033[0m\033[48;2;92;161;110;38;2;255;255;255m $(uptime -p | cut -c 4-) \033[0m" # green edition
 
 # autosuggestions
 # requires zsh-autosuggestions
