@@ -1,8 +1,8 @@
 // -*- mode: jsonc -*-
 {
-    "layer": "true", // Waybar at top layer
+    "layer": "false", // Waybar at top layer
     "position": "top", // Waybar position (top|bottom|left|right)
-    "height": 34, // Waybar height (to be removed for auto height)
+    "height": 36, // Waybar height (to be removed for auto height)
     "margin": "0 0 0 0", // Waybar Margin
     "width": 1920, // Waybar width
     "spacing": 2, // Gaps between modules (4px)
@@ -10,22 +10,15 @@
     "modules-left": [
         "hyprland/workspaces",
 	"ext/workspaces",
-	"custom/separator",
 	"dwl/window"
     ],
     "modules-center": [
     ],
     "modules-right": [
-	"tray",
 	"privacy",
-	"custom/separator",
 	"memory",
-	"custom/separator",
-	"disk",
-	"custom/separator",
         "pulseaudio",
         "battery",
-	"custom/separator",
 	"clock",
     "calendar"
     ],
