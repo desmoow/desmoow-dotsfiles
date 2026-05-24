@@ -1,8 +1,7 @@
-// -*- mode: jsonc -*-
 {
     "layer": "false", // Waybar at top layer
     "position": "top", // Waybar position (top|bottom|left|right)
-    "height": 36, // Waybar height (to be removed for auto height)
+    "height": 26, // Waybar height (to be removed for auto height)
     "margin": "0 0 0 0", // Waybar Margin
     "width": 1920, // Waybar width
     "spacing": 2, // Gaps between modules (4px)
@@ -17,15 +16,17 @@
     "modules-right": [
 	"privacy",
 	"memory",
-        "pulseaudio",
-        "battery",
+  "custom/separator",  
+  "pulseaudio",
+  "battery",
+  "custom/separator",
 	"clock",
     "calendar"
     ],
     // Modules configuration 
 "custom/separator": {
   //"format": "⌘",
-  "format": "|",
+  "format": "/",
   //"format": ",",
   "interval": "0",
   },
@@ -69,7 +70,7 @@
     },
     "dwl/window": {
 	"format": "{title}",
-	"max-length": 55,
+	"max-length": 100,
     },
     "tray": {
         // "icon-size": 21,

@@ -1,12 +1,11 @@
-/* @import "mocha.css"; */
 * {
-    /* `otf-font-awesome` is required to be installed for icons */
     font-family: Zed Mono Nerd Font;
-    font-size: 29px;
+    font-size: 26px;
     opacity: 1;
 }
+
 window#waybar {
-    background-color: rgba(92, 161, 110, 1);
+    background-color: /*rgba(253, 246, 227, 1)*/rgba(15, 14, 6, 1);
     color: rgba(235, 219, 178, 1);
     transition-property: background-color;
     transition-duration: 0.5s;
@@ -26,26 +25,22 @@ window#waybar.solo {
 */
 
 button {
-    /* Use box-shadow instead of border so the text isn't offset */
     box-shadow: inset 0 -3px transparent;
-    /* Avoid rounded borders under each button name */
     border: none;
     border-radius: 0;
 }
 
-/* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
 button:hover {
     background: inherit;
     box-shadow: inset 0 -3px #a89984;
 }
 
-/* you can set a style on hover for any module like this */
 #pulseaudio:hover {
     background-color: rgba(0, 0, 0, 0);
 }
+
 #custom-separator {
-    color: #7D5CA1;
-    background-color: #1d1f21;
+    color: /*#657b83*/#692a06;
 }
 
 #custom-expand-icon {
@@ -53,19 +48,19 @@ button:hover {
 }
 
 #workspaces button {
-    padding: 0 10px;
-    background-color: #1d1f21;
-    color: #ffffff;
+    padding: 0 7px;
+    /* background-color: #fdf6e3 #1d1f21; */
+    color: /*#657b83*/#cfbcba;
 }
 
 #workspaces button:hover {
     background: rgba(0, 0, 0, 0);
-    color: #ffffff;
+    color: /*#657b83*/#cfbcba;
 }
 
 #workspaces button.active {
-    color: #000000;
-    background-color: #5CA16E;
+    color: /*#000000*/#cfbcba;
+    background-color: /*#657b83*/#692A12;
 }
 
 #workspaces button.focused {
@@ -101,8 +96,8 @@ button:hover {
 #power-profiles-daemon,
 #mpd {
     padding: 0 10px;
-    color: #ffffff;
-    background-color: #1d1f21;
+    color: /*#657b83*/#cfbcba;
+    /*background-color: #fdf6e3 #1d1f21*/;
 }
 
 #clock {
@@ -111,7 +106,7 @@ button:hover {
 
 #window {
     padding: 0 10px;
-    color: #ffffff;
+    color: /*#657b83*/#cfbcba;
 }
 
 #workspaces {
@@ -125,13 +120,13 @@ button:hover {
 
 /* If workspaces is the rightmost module, omit right margin */
 .modules-right > widget:last-child > #workspaces {
-    margin-right: 5;
+    margin-right: 0;
 }
 
 #clock {
     background-color: rgba(0, 0, 0, 0);
-    color: #ffffff;
-    background-color: #1d1f21;
+    color: /*#657b83*/#cfbcba;
+    /*background-color: #fdf6e3 #1d1f21*/;
 }
 
 #battery {
@@ -183,8 +178,8 @@ label:focus {
 
 #pulseaudio {
     background-color: rgba(0, 0, 0, 0);
-    color: #ffffff;
-    background-color: #1d1f21;
+    color: /*#657b83*/#cfbcba;
+    /*background-color: #fdf6e3 #1d1f21*/;
 }
 
 #pulseaudio.muted {
