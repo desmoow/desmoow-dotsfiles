@@ -7,16 +7,14 @@
     "spacing": 2, // Gaps between modules (4px)
     // Choose the order of the modules
     "modules-left": [
-        "hyprland/workspaces",
-	"ext/workspaces",
-	"dwl/window"
+    "ext/workspaces"
     ],
     "modules-center": [
     ],
     "modules-right": [
 	"privacy",
-	"memory",
-  "custom/separator",  
+	"custom/text",
+  // "custom/separator",  
   "pulseaudio",
   "battery",
   "custom/separator",
@@ -26,10 +24,14 @@
     // Modules configuration 
 "custom/separator": {
   //"format": "⌘",
-  "format": "/",
+  "format": ":",
   //"format": ",",
   "interval": "0",
-  },
+},
+"custom/text": {
+  "format": "For you, the one listening...",
+  "interval": "0",
+},
     "hyprland/workspaces": {
 	"active-only": false,
          "disable-scroll": true,
