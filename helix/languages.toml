@@ -1,0 +1,41 @@
+# C
+[[language]]
+name = "c"
+language-servers = ["clangd"]
+auto-format = true
+
+# C++
+[[language]]
+name = "cpp"
+language-servers = ["clangd"]
+auto-format = true
+
+# C#
+[[language]]
+name = "c-sharp"
+language-servers = ["omnisharp"]
+auto-format = true
+
+# CSS
+[[language]]
+name = "css"
+language-servers = ["vscode-css-language-server"]
+auto-format = true
+
+# TOML
+[[language]]
+name = "toml"
+language-servers = ["taplo"]
+auto-format = true
+
+# JSON
+[[language]]
+name = "json"
+language-servers = ["vscode-json-language-server"]
+auto-format = true
+
+# JSONC
+[[language]]
+name = "jsonc"
+language-servers = ["vscode-json-language-server"]
+auto-format = true
