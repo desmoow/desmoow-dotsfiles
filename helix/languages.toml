@@ -16,6 +16,24 @@ name = "c-sharp"
 language-servers = ["omnisharp"]
 auto-format = true
 
+# Rust
+[[language]]
+name = "rust"
+language-servers = ["rust-analyzer"]
+auto-format = true
+
+# Python
+[[language]]
+name = "python"
+language-servers = ["basedpyright"]
+auto-format = true
+
+# Lua
+[[language]]
+name = "lua"
+language-servers = ["lua-language-server"]
+auto-format = true
+
 # CSS
 [[language]]
 name = "css"
