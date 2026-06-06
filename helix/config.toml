@@ -1,0 +1,41 @@
+theme = "kanagawa"
+
+[editor]
+line-number = "relative"
+true-color = true
+
+indent-guides.render = true
+indent-guides.character = "┊"
+
+auto-completion = true
+path-completion = true
+
+[editor.lsp]
+display-color-swatches = true
+
+[editor.statusline]
+left = [
+  "mode",                        
+  "file-name",                   
+  "file-modification-indicator"
+]
+right = [
+  "diagnostics",
+  "register",                    
+  "position",                    
+  "primary-selection-length",   
+  "selections",                  
+  "file-encoding",               
+  "position-percentage",         
+  "file-type",                   
+  "spacer"                       
+]
+
+mode.normal = "NORMAL"
+mode.insert = "INSERT"
+mode.select = "SELECT"
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
