@@ -75,10 +75,10 @@ drun-display-format: "{name}";
 @theme "/dev/null"
 
 * {
-    bg: #0f0e06;
-    bg-alt: #252525;
-    fg: #cfbcba;
-    accent: #692a12;
+    bg: #1d1d28;
+    bg-alt: #1d1d28;
+    fg: #dcd7ba;
+    accent: #e6c384;
     background-color: @bg;
 
     color: @fg;
@@ -91,8 +91,8 @@ drun-display-format: "{name}";
 }
 
 window {
-    width: 385px;
-    border: 1px solid;
+    width: 585px;
+    border: 0px solid;
     border-color: @bg-alt;
 }
 
@@ -107,7 +107,7 @@ element-text {
 }
 
 element-text selected {
-    color: @fg;
+    color: @bg;
     background-color: @accent;
 }
 
