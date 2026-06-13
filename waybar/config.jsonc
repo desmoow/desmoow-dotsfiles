@@ -1,7 +1,7 @@
 {
   "layer": "true", // Waybar at top layer
   "position": "top", // Waybar position (top|bottom|left|right)
-  "height": 35, // Waybar height (to be removed for auto height)
+  "height": 25, // Waybar height (to be removed for auto height)
   "margin": "0 0 0 0", // Waybar Margin
   "width": 1920, // Waybar width
   "spacing": 2, // Gaps between modules (4px)
@@ -29,7 +29,7 @@
     "interval": "0"
   },
   "custom/text": {
-    "format": "For you, the one listening...",
+    "format": "With mere words... You shook my brain...!!",
     "interval": "0"
   },
   "hyprland/workspaces": {
@@ -74,7 +74,7 @@
     },
     "persistent-workspaces": {
       "*": 5
-    },
+    }
   },
   "dwl/window": {
     "format": "{title}",
@@ -129,7 +129,6 @@
     },
     "format": "{capacity}% {icon}",
     "format-full": "{capacity}% {icon}",
-    "format-plugged": "{capacity}% ",
     "format-plugged": "{capacity}% ",
     "format-alt": "{time} {icon}",
     // "format-good": "", // An empty format will hide the module

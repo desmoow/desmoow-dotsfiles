@@ -1,14 +1,14 @@
 * {
-  font-family: Iosevka Nerd Font;
+  font-family: Mononoki Nerd Font;
   /*font-style: italic;*/
   /*font-weight: 300;*/
-  font-size: 22px;
+  font-size: 24px;
   opacity: 1;
 }
 
 window#waybar {
-  background-color: rgba(31, 31, 40, 1);
-  color: #dcd7ba;
+  background-color: rgba(40, 40, 40, 1);
+  color: #d4be98;
   transition-property: background-color;
   transition-duration: 0.5s;
 }
@@ -43,7 +43,7 @@ button:hover {
 }
 
 #custom-separator {
-  color: #e6c384;
+  color: #ddc7a1;
 }
 
 #custom-expand-icon {
@@ -52,8 +52,8 @@ button:hover {
 
 #workspaces button {
   padding: 0 4px;
-  color: #727169;
-  margin: 4;
+  color: #5a524c;
+  margin: 0;
 }
 
 #workspaces button:hover {
@@ -62,9 +62,9 @@ button:hover {
 }
 
 #workspaces button.active {
-  color: #C8c093;
-  background-color: #232136;
-  margin: 4;
+  color: #928374;
+  background-color: #32302f;
+  margin: 0;
 }
 
 /*#workspaces button.active label {
