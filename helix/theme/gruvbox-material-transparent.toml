@@ -1,0 +1,11 @@
+inherits = "gruvbox-material"
+
+"ui.background" = {}
+
+"ui.gutter" = {}
+"ui.gutter.selected" = {}
+
+"ui.statusline.normal" = { fg = "#282828", bg = "#d8a657", modifiers = ["bold"] }
+"ui.statusline.insert" = { fg = "#282828", bg = "#a9b665", modifiers = ["bold"] }
+"ui.statusline.select" = { fg = "#282828", bg = "#7daea3", modifiers = ["bold"] }
+
