@@ -1,0 +1,127 @@
+# Bocchi The Rock theme
+ 
+rainbow = [ "bocchi_pink", "nijika_yellow", "kita_red", { fg = "ryo_blue", modifiers = ["bold"] }]
+"type" = "white"
+"constant" = "white"
+"constant.builtin" = { fg = "white", modifiers = ["italic", "bold"] }
+"constant.builtin.boolean" = "white"
+"constant.numeric" = "white"
+"string" = "white"
+"string.special" = "white"
+"comment" = { fg = "gray", modifiers = ["italic"] }
+"variable" = "white"
+"variable.builtin" = { fg = "white", modifiers = ["italic", "bold"] }
+"variable.parameter" = "white"
+"variable.other.member" = "bocchi_pink"
+"punctuation" = "gray"
+"punctuation.delimiter" = "gray"
+"punctuation.bracket" = "bocchi_pink"
+"punctuation.special" = "bocchi_pink"
+"keyword" = "bocchi_pink"
+"keyword.operator" = "bocchi_pink"
+"keyword.directive" = "bocchi_pink"
+"keyword.storage" = "bocchi_pink"
+"operator" = "bocchi_pink"
+"function" = "bocchi_pink"
+"function.macro" = "bocchi_pink"
+"tag" = "bocchi_pink"
+"namespace" = { fg = "white", modifiers = ["italic", "bold"] }
+"attribute" = { fg = "bocchi_pink", modifiers = ["italic", "bold"] }
+"constructor" = "bocchi_pink"
+"module" = "white"
+"special" = "bocchi_pink"
+
+"markup.heading.1" = { fg = "bocchi_pink", modifiers = ["bold"] }
+"markup.heading.2" = { fg = "bocchi_pink", modifiers = ["bold"] }
+"markup.heading.3" = { fg = "white", modifiers = ["bold"] }
+"markup.bold" = { modifiers = ["bold"] }
+"markup.italic" = { modifiers = ["italic", "bold"] }
+"markup.link.url" = { fg = "bocchi_pink", underline = { style = "line" } }
+"markup.link.text" = "white"
+
+"diff.plus" = "bocchi_pink"
+"diff.delta" = "ryo_blue"
+"diff.minus" = "kita_red"
+
+"ui.background" = { bg = "bg_dim" }
+"ui.cursor" = { fg = "bg1", bg = "grey2" }
+"ui.cursor.insert" = { fg = "bg0", bg = "grey1" }
+"ui.cursor.select" = { fg = "bg0", bg = "ryo_blue" }
+"ui.cursor.primary" = { fg = "bg_dim", bg = "nijika_yellow" }
+"ui.cursor.match" = { fg = "white", bg = "bg5" }
+"ui.cursorline.primary" = { bg = "bg1" }
+"ui.cursorline.secondary" = { bg = "bg1" }
+"ui.cursorcolumn.primary" = { bg = "bg1" }
+"ui.cursorcolumn.secondary" = { bg = "bg1" }
+"ui.selection" = { bg = "bg5" }
+"ui.linenr" = "linenr_gray"
+"ui.linenr.selected" = "bocchi_pink"
+"ui.statusline" = { fg = "grey2", bg = "bg0" }
+"ui.statusline.inactive" = { fg = "grey0", bg = "bg1" }
+"ui.statusline.normal" = { fg = "bg0", bg = "bocchi_pink", modifiers = ["bold"] }
+"ui.statusline.insert" = { fg = "bg0", bg = "nijika_yellow", modifiers = ["bold"] }
+"ui.statusline.select" = { fg = "bg0", bg = "ryo_blue", modifiers = ["bold"] }
+"ui.bufferline" = { fg = "grey2", bg = "bg3" }
+"ui.bufferline.active" = { fg = "bg0", bg = "bocchi_pink", modifiers = ["bold"] }
+"ui.popup" = { fg = "grey2", bg = "bg0" }
+"ui.window" = { fg = "bg4", bg = "bg0" }
+"ui.help" = { fg = "white", bg = "bg0" }
+"ui.text" = "white"
+"ui.text.directory" = { fg = "bocchi_pink" }
+"ui.text.focus" = "white"
+"ui.menu" = { fg = "white", bg = "bg0" }
+"ui.menu.selected" = { fg = "bg0", bg = "bocchi_pink" }
+"ui.virtual.ruler" = { bg = "bg0" }
+"ui.virtual.jump-label" = { fg = "nijika_yellow", modifiers = ["bold"] }
+"ui.virtual.whitespace" = { fg = "bg4" }
+"ui.virtual.indent-guide" = { fg = "bg5" }
+"ui.virtual.inlay-hint" = { fg = "grey0" }
+"ui.virtual.wrap" = { fg = "grey0" }
+
+"hint" = "ryo_blue"
+"info" = { fg = "nijika_yellow", modifiers = ["bold"] }
+"warning" = "nijika_yellow"
+"error" = "kita_red"
+
+"diagnostic.hint" = { underline = { color = "ryo_blue", style = "dotted" } }
+"diagnostic.info" = { underline = { color = "bocchi_pink", style = "dotted" } }
+"diagnostic.warning" = { underline = { color = "nijika_yellow", style = "dotted" } }
+"diagnostic.error" = { underline = { color = "kita_red", style = "dotted" } }
+"diagnostic.unnecessary" = { modifiers = ["dim"] }
+"diagnostic.deprecated" = { modifiers = ["crossed_out"] }
+
+[palette]
+# bg_dim = "#292222"
+# bg0 = "#403333"
+# bg1 = "#403333"
+# bg3 = "#403333"
+# bg4 = "#403333"
+# bg5 = "#806666"
+# fg = "#403333"
+
+# grey0 = "#403333"
+# grey1 = "#403333"
+# grey2 = "#403333"
+
+bg_dim = "#1e2326"
+bg0 = "#272e33"
+bg1 = "#2e383c"
+bg3 = "#414b50"
+bg4 = "#495156"
+bg5 = "#4f5b58"
+fg = "#d3c6aa"
+
+grey0 = "#7a8478"
+grey1 = "#403333"
+grey2 = "#9da9a0"
+
+linenr_gray = "#5a6468"
+linenr_gray_selected = "#6a7478"
+
+white = "#dddddd"
+gray = "#9da9a0"
+
+bocchi_pink = "#ffa6c9"        # Bocchi bocchi_pink - primary accent
+ryo_blue = "#4a8bc2"    # Ryo's blue - secondary accent
+nijika_yellow = "#ffd166" # Nijika's yellow - tertiary accent
+kita_red = "#e76f51"    # Kita's red - warnings and errors
