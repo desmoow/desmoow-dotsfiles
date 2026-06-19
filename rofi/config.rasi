@@ -1,6 +1,6 @@
 configuration {
 	modi: "drun";
-	font: "Zed Mono Nerd Font 16";
+	font: "ubuntu Mono Nerd Font 18";
 /*	location: 0;*/
 /*	yoffset: 0;*/
 /*	xoffset: 0;*/
@@ -58,7 +58,7 @@ drun-display-format: "{name}";
 /*	display-windowcd: ;*/
 /*	display-run: ;*/
 /*	display-ssh: ;*/
-	display-drun: "❯ ";
+	display-drun: "> ";
 /*	display-combi: ;*/
 /*	display-keys: ;*/
 /*	display-filebrowser: ;*/
@@ -75,10 +75,10 @@ drun-display-format: "{name}";
 @theme "/dev/null"
 
 * {
-    bg: #1d1d28;
-    bg-alt: #1d1d28;
-    fg: #dcd7ba;
-    accent: #e6c384;
+    bg: #1e2326;
+    bg-alt: #2e383c;
+    fg: #dddddd;
+    accent: #ffa6c9;
     background-color: @bg;
 
     color: @fg;
@@ -107,8 +107,8 @@ element-text {
 }
 
 element-text selected {
-    color: @bg;
-    background-color: @accent;
+    color: @accent;
+    background-color: @bg-alt;
 }
 
 entry {
@@ -127,7 +127,7 @@ inputbar {
 
 prompt {
     text-color: @accent;
-    font: "Zed Mono Nerd Font Bold 16";
+    font: "Ubuntu Mono Nerd Font 18";
 }
 
 entry {
