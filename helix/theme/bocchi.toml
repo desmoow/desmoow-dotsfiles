@@ -1,6 +1,6 @@
-# Bocchi The Rock theme
+# Bocchi The Rock theme desmoow modified
  
-rainbow = [ "bocchi_pink", "nijika_yellow", "kita_red", { fg = "ryo_blue", modifiers = ["bold"] }]
+rainbow = [ "accent1", "accent3", "accent4", { fg = "accent2", modifiers = ["bold"] }]
 "type" = "white"
 "constant" = "white"
 "constant.builtin" = { fg = "white", modifiers = ["italic", "bold"] }
@@ -12,42 +12,42 @@ rainbow = [ "bocchi_pink", "nijika_yellow", "kita_red", { fg = "ryo_blue", modif
 "variable" = "white"
 "variable.builtin" = { fg = "white", modifiers = ["italic", "bold"] }
 "variable.parameter" = "white"
-"variable.other.member" = "bocchi_pink"
+"variable.other.member" = "accent1"
 "punctuation" = "gray"
 "punctuation.delimiter" = "gray"
-"punctuation.bracket" = "bocchi_pink"
-"punctuation.special" = "bocchi_pink"
-"keyword" = "bocchi_pink"
-"keyword.operator" = "bocchi_pink"
-"keyword.directive" = "bocchi_pink"
-"keyword.storage" = "bocchi_pink"
-"operator" = "bocchi_pink"
-"function" = "bocchi_pink"
-"function.macro" = "bocchi_pink"
-"tag" = "bocchi_pink"
+"punctuation.bracket" = "accent1"
+"punctuation.special" = "accent1"
+"keyword" = "accent1"
+"keyword.operator" = "accent1"
+"keyword.directive" = "accent1"
+"keyword.storage" = "accent1"
+"operator" = "accent1"
+"function" = "accent1"
+"function.macro" = "accent1"
+"tag" = "accent1"
 "namespace" = { fg = "white", modifiers = ["italic", "bold"] }
-"attribute" = { fg = "bocchi_pink", modifiers = ["italic", "bold"] }
-"constructor" = "bocchi_pink"
+"attribute" = { fg = "accent1", modifiers = ["italic", "bold"] }
+"constructor" = "accent1"
 "module" = "white"
-"special" = "bocchi_pink"
+"special" = "accent1"
 
-"markup.heading.1" = { fg = "bocchi_pink", modifiers = ["bold"] }
-"markup.heading.2" = { fg = "bocchi_pink", modifiers = ["bold"] }
+"markup.heading.1" = { fg = "accent1", modifiers = ["bold"] }
+"markup.heading.2" = { fg = "accent1", modifiers = ["bold"] }
 "markup.heading.3" = { fg = "white", modifiers = ["bold"] }
 "markup.bold" = { modifiers = ["bold"] }
 "markup.italic" = { modifiers = ["italic", "bold"] }
-"markup.link.url" = { fg = "bocchi_pink", underline = { style = "line" } }
+"markup.link.url" = { fg = "accent1", underline = { style = "line" } }
 "markup.link.text" = "white"
 
-"diff.plus" = "bocchi_pink"
-"diff.delta" = "ryo_blue"
-"diff.minus" = "kita_red"
+"diff.plus" = "accent1"
+"diff.delta" = "accent2"
+"diff.minus" = "accent4"
 
 "ui.background" = { bg = "bg_dim" }
 "ui.cursor" = { fg = "bg1", bg = "grey2" }
 "ui.cursor.insert" = { fg = "bg0", bg = "grey1" }
-"ui.cursor.select" = { fg = "bg0", bg = "ryo_blue" }
-"ui.cursor.primary" = { fg = "bg_dim", bg = "nijika_yellow" }
+"ui.cursor.select" = { fg = "bg0", bg = "accent2" }
+"ui.cursor.primary" = { fg = "bg_dim", bg = "accent3" }
 "ui.cursor.match" = { fg = "white", bg = "bg5" }
 "ui.cursorline.primary" = { bg = "bg1" }
 "ui.cursorline.secondary" = { bg = "bg1" }
@@ -55,38 +55,38 @@ rainbow = [ "bocchi_pink", "nijika_yellow", "kita_red", { fg = "ryo_blue", modif
 "ui.cursorcolumn.secondary" = { bg = "bg1" }
 "ui.selection" = { bg = "bg5" }
 "ui.linenr" = "linenr_gray"
-"ui.linenr.selected" = "bocchi_pink"
+"ui.linenr.selected" = "accent1"
 "ui.statusline" = { fg = "grey2", bg = "bg0" }
 "ui.statusline.inactive" = { fg = "grey0", bg = "bg1" }
-"ui.statusline.normal" = { fg = "bg0", bg = "bocchi_pink", modifiers = ["bold"] }
-"ui.statusline.insert" = { fg = "bg0", bg = "nijika_yellow", modifiers = ["bold"] }
-"ui.statusline.select" = { fg = "bg0", bg = "ryo_blue", modifiers = ["bold"] }
-"ui.bufferline" = { fg = "grey2", bg = "bg3" }
-"ui.bufferline.active" = { fg = "bg0", bg = "bocchi_pink", modifiers = ["bold"] }
+"ui.statusline.normal" = { fg = "bg0", bg = "accent1", modifiers = ["bold"] }
+"ui.statusline.insert" = { fg = "bg0", bg = "accent3", modifiers = ["bold"] }
+"ui.statusline.select" = { fg = "bg0", bg = "accent2", modifiers = ["bold"] }
+"ui.bufferline" = { fg = "grey2", bg = "bg0" }
+"ui.bufferline.active" = { fg = "bg0", bg = "accent1", modifiers = ["bold"] }
 "ui.popup" = { fg = "grey2", bg = "bg0" }
 "ui.window" = { fg = "bg4", bg = "bg0" }
 "ui.help" = { fg = "white", bg = "bg0" }
 "ui.text" = "white"
-"ui.text.directory" = { fg = "bocchi_pink" }
+"ui.text.directory" = { fg = "accent1" }
 "ui.text.focus" = "white"
 "ui.menu" = { fg = "white", bg = "bg0" }
-"ui.menu.selected" = { fg = "bg0", bg = "bocchi_pink" }
+"ui.menu.selected" = { fg = "bg0", bg = "accent1" }
 "ui.virtual.ruler" = { bg = "bg0" }
-"ui.virtual.jump-label" = { fg = "nijika_yellow", modifiers = ["bold"] }
+"ui.virtual.jump-label" = { fg = "accent3", modifiers = ["bold"] }
 "ui.virtual.whitespace" = { fg = "bg4" }
 "ui.virtual.indent-guide" = { fg = "bg5" }
 "ui.virtual.inlay-hint" = { fg = "grey0" }
 "ui.virtual.wrap" = { fg = "grey0" }
 
-"hint" = "ryo_blue"
-"info" = { fg = "nijika_yellow", modifiers = ["bold"] }
-"warning" = "nijika_yellow"
-"error" = "kita_red"
+"hint" = "accent2"
+"info" = { fg = "accent3", modifiers = ["bold"] }
+"warning" = "accent3"
+"error" = "accent4"
 
-"diagnostic.hint" = { underline = { color = "ryo_blue", style = "dotted" } }
-"diagnostic.info" = { underline = { color = "bocchi_pink", style = "dotted" } }
-"diagnostic.warning" = { underline = { color = "nijika_yellow", style = "dotted" } }
-"diagnostic.error" = { underline = { color = "kita_red", style = "dotted" } }
+"diagnostic.hint" = { underline = { color = "accent2", style = "dotted" } }
+"diagnostic.info" = { underline = { color = "accent1", style = "dotted" } }
+"diagnostic.warning" = { underline = { color = "accent3", style = "dotted" } }
+"diagnostic.error" = { underline = { color = "accent4", style = "dotted" } }
 "diagnostic.unnecessary" = { modifiers = ["dim"] }
 "diagnostic.deprecated" = { modifiers = ["crossed_out"] }
 
@@ -121,7 +121,7 @@ linenr_gray_selected = "#6a7478"
 white = "#dddddd"
 gray = "#9da9a0"
 
-bocchi_pink = "#ffa6c9"        # Bocchi bocchi_pink - primary accent
-ryo_blue = "#4a8bc2"    # Ryo's blue - secondary accent
-nijika_yellow = "#ffd166" # Nijika's yellow - tertiary accent
-kita_red = "#e76f51"    # Kita's red - warnings and errors
+accent1 = "#ffa6c9"       #  primary accent
+accent2 = "#4a8bc2"       # secondary accent
+accent3 = "#ffd166"       # tertiary accent
+accent4 = "#e76f51"       # warnings and errors
