@@ -29,5 +29,6 @@ call plug#end()
 
 require("plugins.noirbuddy")
 require("plugins.lualine")
+require("plugins.colorizer")
 require("plugins.barbar")
 require("plugins.alpha")
