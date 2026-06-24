@@ -1,0 +1,33 @@
+require("config.options")
+
+vim.cmd([[
+call plug#begin()
+
+Plug('nvim-lualine/lualine.nvim')
+Plug('nvim-tree/nvim-web-devicons')
+Plug('folke/which-key.nvim')
+Plug('romgrk/barbar.nvim')
+Plug('goolord/alpha-nvim')
+Plug('mfussenegger/nvim-lint')
+Plug('nvim-tree/nvim-tree.lua')
+Plug('windwp/nvim-autopairs') 
+Plug('lewis6991/gitsigns.nvim')
+Plug('numToStr/Comment.nvim')
+Plug('norcalli/nvim-colorizer.lua')
+Plug('ibhagwan/fzf-lua')
+Plug('numToStr/FTerm.nvim')
+Plug('ron-rs/ron.vim')
+Plug('MeanderingProgrammer/render-markdown.nvim')
+Plug('emmanueltouzery/decisive.nvim')
+Plug('folke/twilight.nvim')
+Plug('ntk148v/komau.vim')
+Plug('tjdevries/colorbuddy.nvim')
+Plug('jesseleite/noirbuddy.nvim')
+
+call plug#end()
+]])
+
+require("plugins.noirbuddy")
+require("plugins.lualine")
+require("plugins.barbar")
+require("plugins.alpha")
