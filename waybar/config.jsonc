@@ -1,27 +1,29 @@
 {
   "layer": "true", // Waybar at top layer
   "position": "top", // Waybar position (top|bottom|left|right)
-  "height": 25, // Waybar height (to be removed for auto height)
-  "margin": "0 0 0 0", // Waybar Margin
-  "width": 1920, // Waybar width
+  "height": 40, // Waybar height (to be removed for auto height)
+  "margin": "14 10 0 14", // Waybar Margin
+  "width": 1896, // Waybar width
   "spacing": 2, // Gaps between modules (4px)
   // Choose the order of the modules
   "modules-left": [
-    "ext/workspaces"
+    "ext/workspaces",
   ],
   "modules-center": [],
   "modules-right": [
-    "privacy",
-    "custom/text",
+    /*"privacy",
+    "disk",
+    "custom/separator",
+    "cpu",
+    "custom/separator",
     "memory",
     "custom/separator",
     "pulseaudio",
     "battery",
-    "custom/separator",
+    "custom/separator",*/
     "clock",
     "calendar"
   ],
-  // Modules configuration
   "custom/separator": {
     //"format": "⌘",
     "format": "/",
@@ -29,7 +31,7 @@
     "interval": "0"
   },
   "custom/text": {
-    "format": "With mere words... You shook my brain...!!",
+    "format": "The sky is filled with stars!",
     "interval": "0"
   },
   "hyprland/workspaces": {
@@ -78,7 +80,7 @@
   },
   "dwl/window": {
     "format": "{title}",
-    "max-length": 100
+    "max-length": 60
   },
   "tray": {
     // "icon-size": 21,
