@@ -1,16 +1,17 @@
 {
   "layer": "true", // Waybar at top layer
-  "position": "left", // Waybar position (top|bottom|left|right)
-  "height": 1042, // Waybar height (to be removed for auto height)
-  "margin": "0 0 14 10", // Waybar Margin
-  "width": 42, // Waybar width
+  "position": "top", // Waybar position (top|bottom|left|right)
+  "height": 40, // Waybar height (to be removed for auto height)
+  "margin": "14 10 0 14", // Waybar Margin
+  "width": 1898, // Waybar width
   "spacing": 2, // Gaps between modules (4px)
   // Choose the order of the modules
   "modules-left": [
   "ext/workspaces"
   ],
   "modules-center": [
-  "custom/text"
+  "custom/text",
+  "custom/mtext"
   ],
   "modules-right": [
   "clock",
@@ -25,8 +26,7 @@
   "custom/text": {
     // format": "The sky is filled with stars!",
     "format": "Whose eyes are those eyes?",
-	"interval": "0",
-	"rotate": 90,
+	"interval": "0"
   },
   "custom/mtext": {
     "exec": "~/.config/waybar/scripts/mtext.sh",
@@ -91,11 +91,9 @@
   },
   "clock": {
     // "timezone": "America/New_York",
-    //"format": "{:%d/%m/%Y %H:%M}",
-    //"tooltip-format": "<small><tt>{calendar}</tt></small>",
-    "format": "{:%H\n%M\n--\n%d\n%m}",
+    "format": "{:%d/%m/%Y %H:%M}",
     "tooltip-format": "<small><tt>{calendar}</tt></small>",
-				"interval": 1,
+    "interval": 1,
     "calendar": {
       "mode": "month",
       "mode-mon-col": 3,
@@ -244,4 +242,3 @@
     ]
   }
 }
-
