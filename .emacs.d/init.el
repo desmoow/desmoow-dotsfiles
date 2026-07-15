@@ -1,32 +1,28 @@
 (add-to-list 'load-path "~/.emacs.d/lisp")
 (setq custom-file "~/.emacs.d/lisp")
 
-(add-to-list 'custom-theme-load-path
-             "~/.emacs.d/lisp/mindre-theme")
-
-(setq mindre-use-more-bold nil
-      mindre-use-faded-lisp-parens t)
-
-(load-theme 'mindre t)
-
 (menu-bar-mode -1)
 (tool-bar-mode -1)
+(add-to-list 'default-frame-alist '(tool-bar-lines . 0))
 (scroll-bar-mode -1)
 (line-number-mode 1)
 (column-number-mode 1)
 (global-display-line-numbers-mode 1)
 (setq scroll-step 1)
 (setq scroll-conservatively 10000)
-(setq inhibit-startup-screen t)
-(setq initial-buffer-choice t)
-
+;;(setq inhibit-startup-screen t)
+;;(setq initial-buffer-choice t)
+(setq-default truncate-lines t)
 (setq make-backup-files nil)
 (setq auto-save-default nil)
+(setq confirm-kill-processes nil)
 
 (ido-mode 1)
 (electric-pair-mode 1)
 
-(add-to-list 'default-frame-alist '(font . "Spleen-17"))
+;;(add-to-list 'default-frame-alist '(font . "Spleen-17"))
+(add-to-list 'default-frame-alist '(font . "ProFontIIxNerdFontMono-15"))
+;;(add-to-list 'default-frame-alist '(font . "IosevkaComfy-17"))
 
 (require 'package)
 
@@ -57,11 +53,41 @@
   :config
   (evil-mode 1))
 
-(use-package hima-theme
+(use-package vterm
+  :ensure t)
+(setq vterm-shell "/bin/bash")
+
+(with-eval-after-load 'evil
+  (evil-set-initial-state 'vterm-mode 'emacs))
+
+(use-package nano-theme
   :ensure t
   :config 
-  ;;(load-theme 'hima t)
+;;  (load-theme 'nano t)
   )
+
+(use-package yabaki-theme
+  :ensure t
+  :config
+  (load-theme 'yabaki t)
+  )
+
+(use-package base16-theme
+  :ensure t
+  :config
+;;  (load-theme 'base16-mountain t)
+  )
+
+(use-package creamsody-theme
+  :ensure t
+  :config
+  ;;  (load-theme 'creamsody-darker t)
+  )
+
+(use-package dashboard
+  :ensure t
+  :config
+  (dashboard-setup-startup-hook))
 
 (use-package vertico
   :ensure t
